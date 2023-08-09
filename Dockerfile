@@ -35,7 +35,7 @@ WORKDIR /home/esp/issue231/vendor/espressif_tinyusb_0.15.0_2
 RUN unzip -q /tmp/espressif_tinyusb_0.15.0_2.zip
 
 # Hack to work around tusb_config.h not found
-RUN ln -s ../espressif_esp_tinyusb_1.3.1/include/tusb_config.h .
+RUN ln -s ../../espressif_esp_tinyusb_1.3.1/include/tusb_config.h ./src
 
 WORKDIR /home/esp/issue231
 
@@ -43,5 +43,6 @@ WORKDIR /home/esp/issue231
 ENV LIBCLANG_PATH="/home/esp/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-16.0.0-20230516/esp-clang/lib"
 ENV PATH="/home/esp/.rustup/toolchains/esp/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin:$PATH"
 ENV IDF_PATH="/home/esp/esp-idf"
+ENV RUST_BACKTRACE=1
 
 # RUN cargo build -j 32 --target xtensa-esp32s3-espidf
