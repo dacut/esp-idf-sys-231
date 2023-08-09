@@ -303,8 +303,7 @@ dependencies = [
 [[package]]
 name = "esp-idf-sys"
 version = "0.33.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0d793b605e8037907f0e6697b0995a355238f065f321dd389fdf866aa9f8d140"
+source = "git+https://github.com/esp-rs/esp-idf-sys.git?branch=feature/remote-components#e367e0732b93c3008c93949f4eccc269c12a233d"
 dependencies = [
  "anyhow",
  "bindgen",

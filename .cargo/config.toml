@@ -1,4 +1,9 @@
 [build]
+jobs = 32
+rustflags = ["--cfg", "espidf_time64"]
+
+[env]
+CARGO_CMAKE_BUILD_INCLUDES = "/home/esp/issue231/vendor/espressif_esp_tinyusb_1.3.1/include"
 
 [target.xtensa-esp32-espidf]
 linker = "ldproxy"

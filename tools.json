@@ -822,8 +822,8 @@
             "url": "https://dl.espressif.com/dl/ninja-1.10.2-linux64.tar.gz"
           },
           "linux-arm64": {
-            "sha256": "d7b74f46b891c7cb5f56eff844fdc3a5dc0b898b305a79e83958bd59546725fe",
-            "size": 230707,
+            "sha256": "87a463acfbba03eb8021fa04459a6ebf4050017af116f210a999cebea60ecb3b",
+            "size": 230361,
             "url": "https://kanga.org/dist/ninja-1.10.2-linux-aarch64.tar.gz"
           },
           "macos": {
